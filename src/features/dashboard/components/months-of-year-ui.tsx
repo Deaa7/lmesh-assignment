@@ -17,7 +17,7 @@ export default function MonthsOfYearUI() {
  
 
   return (
-    <div className="flex justify-center gap-2 border-b-2 border-b-gray-300 pb-3 ">
+    <div className="flex justify-center flex-wrap gap-1 sm:gap-1.5 md:gap-2 border-b-2 border-b-gray-300 pb-2 sm:pb-2.5 md:pb-3 overflow-x-auto">
       {Array.from({ length: 12 }, (_, index) => (
         <MonthUI
           key={index}

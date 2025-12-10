@@ -6,7 +6,7 @@ const defaultAssignments: assignment[] = [
   {
     id: generateId(),
     title: "Innovation",
-    metadata: "| Europe | RN-VCC | Renault",
+    metadata: "| Europe | RN-VCC | Renault ",
     items: [
       {
         id: generateId(),

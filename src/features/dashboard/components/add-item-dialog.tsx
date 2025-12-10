@@ -4,15 +4,15 @@ import { Plus } from "lucide-react";
 export default function AddItemDialog() {
     return <Dialog>
         <DialogTrigger asChild>
-            <button>
-                <Plus size={20}  className="text-blue-800"/>
+            <button className="flex-shrink-0">
+                <Plus size={16} className="sm:w-5 sm:h-5 text-blue-800"/>
             </button>
         </DialogTrigger>
-        <DialogContent>
-            <DialogTitle>
+        <DialogContent className="w-[90%] sm:w-full max-w-md">
+            <DialogTitle className="text-base sm:text-lg">
                 Add new Item
             </DialogTitle>
-            <DialogDescription>this dialog is used to add a new item</DialogDescription>
+            <DialogDescription className="text-xs sm:text-sm">this dialog is used to add a new item</DialogDescription>
         </DialogContent>
     </Dialog>
 }

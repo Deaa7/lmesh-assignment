@@ -58,12 +58,12 @@ export default function StuffNumberAndIsFictive({ item }: { item: items }) {
   };
 
   return (
-    <div className="flex justify-start items-center gap-1 my-1">
-      <div className="w-[94%] bg-gray-200 h-8! text-xs rounded-sm text-gray-600 font-semibold"></div>
+    <div className="flex justify-start items-center gap-0.5 sm:gap-1 my-0.5 sm:my-1">
+      <div className="lg:w-[94%] w-[85%] bg-gray-200 h-7 sm:h-8 text-[10px] sm:text-xs rounded-sm text-gray-600 font-semibold"></div>
       <div
-        className={`w-[6%]  h-8! text-xs rounded-sm text-gray-600 font-semibold ${
+        className={`lg:w-[6%] w-[14%] h-7 sm:h-8 text-[10px] sm:text-xs rounded-sm text-gray-600 font-semibold ${
           item.isFictive ? "bg-red-200" : "bg-gray-200"
-        } flex items-center justify-center gap-2`}>
+        } flex items-center justify-center gap-0 sm:gap-2`}>
         <input
           type="text"
           value={stuffNumber}
@@ -73,11 +73,11 @@ export default function StuffNumberAndIsFictive({ item }: { item: items }) {
               updateStuffNumberHandler();
             }
           }}
-          className=" cursor-default text-start w-5 text-xs rounded-xs   focus-within:border-gray-300 focus:shadow  outline-none  border border-transparent  "
+          className="cursor-default text-start w-3 sm:w-5 text-[10px] sm:text-xs rounded-xs focus-within:border-gray-300 focus:shadow outline-none border border-transparent"
         />
 
         <Checkbox
-          className=" border-gray-300 shadow data-[state=checked]:bg-red-400 data-[state=checked]:border-none"
+          className="border-gray-300 shadow data-[state=checked]:bg-red-400 data-[state=checked]:border-none w-3 h-3 sm:w-4 sm:h-4"
           defaultChecked={item.isFictive}
           onCheckedChange={() => toggleItemFictiveStatus(item.id)}
         />

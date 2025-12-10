@@ -5,11 +5,11 @@ import AddAssignmentDialog from "@/features/dashboard/components/add-assignment-
 
 export default function Dashboard() {
   return (
-    <div className="p-2">
-      <div className="flex justify-between items-center flex-wrap mt-5">
+    <div className="p-1 sm:p-2 md:p-3 lg:p-4">
+      <div className="flex justify-between items-center flex-wrap mt-2 sm:mt-3 md:mt-4 lg:mt-5 gap-2">
         <div>
-          <h1 className="text-2xl font-bold"> DOE Jane </h1>
-          <p className="text-sm text-gray-600 font-semibold">Workload</p>
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-2xl font-bold"> DOE Jane </h1>
+          <p className="text-xs sm:text-sm md:text-sm lg:text-sm text-gray-600 font-semibold">Workload</p>
         </div>
         <AddAssignmentDialog />
       </div>
@@ -17,7 +17,7 @@ export default function Dashboard() {
 
       <div
         id="assignments-container"
-        className=" mt-5 max-h-[400px] overflow-y-auto">
+        className="mt-2 sm:mt-3 md:mt-4 lg:mt-5 max-h-[300px] sm:max-h-[350px] md:max-h-[400px] lg:max-h-[450px] overflow-y-auto">
         <AssignmentsUI />
       </div>
       <ColorLabels />
